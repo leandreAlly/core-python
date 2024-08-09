@@ -1,17 +1,17 @@
 # String Error
-print('Hello, world!)
+print('Hello, world!')
       
 # Indentation Error
 if True:
-print('Ahoy, matey!')
+    print('Ahoy, matey!')
       
 # Syntax Error
-if True
+if True:
     print('Greetings, Earthlings!')
 
 # Logic Error
 animal = 'Lion'
-if animal == 'Lino':
+if animal == 'Lion':
     print('Meat')
 elif animal == 'Zebra':
     print('Grass')
