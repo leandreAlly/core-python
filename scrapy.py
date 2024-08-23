@@ -30,5 +30,15 @@ descriptions = []
 for desc in bs_descriptions:
     descriptions.append(desc.string)
 
-print("Titles++++",titles)
-print("Desc++++",descriptions)
+print(f"Number of titles: {len(titles)}")
+print(f"Number of descriptions: {len(descriptions)}")
+
+headers = ["title", "description"]
+
+with open("data.csv", "w", newline="") as csvfile:
+    writer = csv.writer(csvfile, delimiter=",")
+    writer.writerow(headers)
+
+    for i in range(len(titles)):
+        row = [titles[i], descriptions[i]]
+        writer.writerow(row)
